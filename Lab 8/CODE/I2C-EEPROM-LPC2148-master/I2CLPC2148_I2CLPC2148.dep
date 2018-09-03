@@ -1,0 +1,29 @@
+Dependencies for Project 'I2CLPC2148', Target 'I2CLPC2148': (DO NOT MODIFY !)
+F (.\Startup.s)(0x57FFDFB2)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 521"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\I2C.c)(0x581C825E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\i2c.o --omf_browse .\i2c.crf --depend .\i2c.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570F3C30)
+I (i2c.h)(0x581C825E)
+F (.\main.c)(0x582320CA)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.H)(0x570F3C30)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E614E)
+I (Type.h)(0x582320D8)
+I (i2c.h)(0x581C825E)
+I (lcd.h)(0x5818D842)
+F (.\timer.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\timer.o --omf_browse .\timer.crf --depend .\timer.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.H)(0x570F3C30)
+I (Type.h)(0x582320D8)
+I (Timer.h)(0x57FFDFB2)
+F (.\uart.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC21xx.h)(0x570F3C30)
+I (TYPE.h)(0x582320D8)
+I (UART.h)(0x57FFDFB2)
+F (.\extn_int.c)(0x582321E6)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\extn_int.o --omf_browse .\extn_int.crf --depend .\extn_int.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570F3C30)
+I (type.h)(0x582320D8)
+F (.\lcd.c)(0x5818D9A6)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="521"-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570F3C30)
+I (lcd.h)(0x5818D842)
+F (.\I2C.h)(0x581C825E)()
+F (.\timer.h)(0x57FFDFB2)()
+F (.\type.h)(0x582320D8)()
+F (.\uart.h)(0x57FFDFB2)()

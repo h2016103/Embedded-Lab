@@ -1,0 +1,33 @@
+#include "stm8s.h"
+void delay(long int n)
+{
+	long int i,j ;
+	for(i=n;i>0;i--)
+         for( j= 10; j>0 ;j--);
+}
+void initSPI(void)
+{
+	SPI->CR1=0x3c; // DISABLE SPI  , CPOL=0,CPHA=0,BR = 0 , MASTER MODE 
+	SPI->CR2=0x00; // SSM = 0 
+	SPI->CR1|=0x40;  // enable SPI
+}
+
+void main(void)
+{
+        GPIOA->DDR =0xFF;
+				GPIOA->CR1 =0xFF;
+        GPIOA->CR2 =0xFF;
+				GPIOA->ODR=0x00;
+				initSPI();
+        GPIOA->ODR|=0x40;// MAKE PA6 = 1;
+        SPI->DR= 0Xef;
+				while(((SPI->SR)&(0x02))== 0x00);  // if tx bit high
+        while(((SPI->SR)&(0x80))== 0x80);   // if bsy flag becomes low
+				SPI->CR1 &=0xbf;            //disable SPI
+				GPIOA->ODR |=   0x20;  // make pa5 high 
+				delay(10);
+				GPIOA->ODR &= ~(0x20);   // make pa5 low
+		
+        while(1);
+	
+}

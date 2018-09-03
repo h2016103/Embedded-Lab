@@ -1,0 +1,470 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\MY ARM\Work at IITKgp\adc\adc.uvproj
+Project File Date:  12/07/2011
+
+<h2>Output:</h2>
+Build target 'ADC_LPC21xx'
+assembling Startup.s...
+compiling main.c...
+compiling lcd.c...
+linking...
+.\Obj\adc.axf: Error: L6218E: Undefined symbol main (referred from entry7.o).
+.\Obj\adc.axf: Not enough information to list image symbols.
+.\Obj\adc.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(4): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(7): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=404 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 2 Warning(s).
+Build target 'ADC_LPC21xx'
+assembling Startup.s...
+compiling main.c...
+main.c(4): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(8): warning:  #223-D: function "lcp_putstring" declared implicitly
+main.c:    lcp_putstring("Samaiya Ji");
+main.c:    ^
+main.c(10): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 3 warnings, 0 errors
+compiling lcd.c...
+linking...
+.\Obj\adc.axf: Error: L6218E: Undefined symbol lcp_putstring (referred from main.o).
+.\Obj\adc.axf: Not enough information to list image symbols.
+.\Obj\adc.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(4): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(8): error:  #167: argument of type "char *" is incompatible with parameter of type "unsigned char"
+main.c:    lcd_putstring("Samaiya Ji");
+main.c:                  ^
+main.c(8): error:  #165: too few arguments in function call
+main.c:    lcd_putstring("Samaiya Ji");
+main.c:                              ^
+main.c(10): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 2 warnings, 2 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(4): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(10): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1396 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 2 Warning(s).
+Build target 'ADC_LPC21xx'
+assembling Startup.s...
+compiling main.c...
+main.c(4): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(11): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 2 warnings, 0 errors
+compiling lcd.c...
+linking...
+Program Size: Code=1428 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 2 Warning(s).
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(38): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(38): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                         ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                         ^
+adc.c(40): warning:  #111-D: statement is unreachable
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                                  ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                                  ^
+adc.c(46): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c(46): warning:  #940-D: missing return statement at end of non-void function "ADC"
+adc.c:   }
+adc.c:   ^
+adc.c: adc.c: 5 warnings, 3 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(38): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(38): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                         ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                         ^
+adc.c(40): warning:  #111-D: statement is unreachable
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                                  ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        return((AD0GDR & DATA_MASK)>>6);    
+adc.c:                                  ^
+adc.c(46): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(47): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 5 warnings, 3 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(39): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        data = (AD0GDR&DATA_MASK)>>6;
+adc.c:                       ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        data = (AD0GDR&DATA_MASK)>>6;
+adc.c:                                ^
+adc.c(47): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(48): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 4 warnings, 2 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(39): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        data = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                        ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        data = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                        ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        data = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                                 ^
+adc.c(47): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(48): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 4 warnings, 3 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(39): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        val = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        val = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                       ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        val = ((AD0GDR&DATA_MASK)>>6);
+adc.c:                                ^
+adc.c(47): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(48): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 4 warnings, 3 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(39): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(40): error:  #18: expected a ")"
+adc.c:        val = (AD0GDR&DATA_MASK);
+adc.c:                      ^
+adc.c(40): error:  #29: expected an expression
+adc.c:        val = (AD0GDR&DATA_MASK);
+adc.c:                               ^
+adc.c(47): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(48): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 4 warnings, 2 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(39): warning:  #61-D: integer operation result is out of range
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                           ^
+adc.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+adc.c:        while(!(AD0GDR&(1<<31))); // wait to finish conversion
+adc.c:                       ^
+adc.c(48): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(49): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=1428 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 4 Warning(s).
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(48): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(49): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1428 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 2 Warning(s).
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(48): error:  #20: identifier "NULL" is undefined
+adc.c:      return NULL;
+adc.c:             ^
+adc.c(49): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 1 warning, 1 error
+Target not created
+Build target 'ADC_LPC21xx'
+compiling adc.c...
+adc.c(48): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(49): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1428 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 2 Warning(s).
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(3): error:  #5: cannot open source input file "acd.c": No such file or directory
+main.c:   #include"acd.c"
+main.c:                  ^
+main.c: main.c: 0 warnings, 1 error
+compiling adc.c...
+adc.c(44): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(45): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+adc.c: adc.c: 2 warnings, 0 errors
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+adc.c(44): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(45): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+main.c(5): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(12): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 4 warnings, 0 errors
+linking...
+.\Obj\adc.axf: Error: L6200E: Symbol ADC multiply defined (by adc.o and main.o).
+.\Obj\adc.axf: Not enough information to list image symbols.
+.\Obj\adc.axf: Not enough information to list the image map.
+.\Obj\adc.axf: Finished: 2 information, 0 warning and 1 error messages.
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+adc.c(44): warning:  #117-D: non-void function "ADC" should return a value
+adc.c:      return;
+adc.c:            ^
+adc.c(45): warning:  #1-D: last line of file ends without a newline
+adc.c:   }
+adc.c:    ^
+main.c(5): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(12): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 4 warnings, 0 errors
+linking...
+.\Obj\adc.axf: Error: L6200E: Symbol ADC multiply defined (by adc.o and main.o).
+.\Obj\adc.axf: Not enough information to list image symbols.
+.\Obj\adc.axf: Not enough information to list the image map.
+.\Obj\adc.axf: Finished: 2 information, 0 warning and 1 error messages.
+Target not created
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(44): warning:  #117-D: non-void function "ADC" should return a value
+main.c:      return;
+main.c:            ^
+main.c(48): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(55): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=1768 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 3 Warning(s).
+Build target 'ADC_LPC21xx'
+compiling main.c...
+main.c(44): warning:  #117-D: non-void function "ADC" should return a value
+main.c:      return;
+main.c:            ^
+main.c(48): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(59): warning:  #223-D: function "lcd_data_write" declared implicitly
+main.c:      lcd_data_write((char)value);
+main.c:      ^
+main.c(60): warning:  #223-D: function "delay" declared implicitly
+main.c:      delay(100*500);
+main.c:      ^
+main.c(64): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 5 Warning(s).
+Build target 'ADC_LPC21xx'
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 0 Warning(s).
+Build target 'ADC_LPC21xx'
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 0 Warning(s).
+Build target 'ADC_LPC21xx'
+assembling Startup.s...
+compiling main.c...
+main.c(44): warning:  #117-D: non-void function "ADC" should return a value
+main.c:      return;
+main.c:            ^
+main.c(48): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(59): warning:  #223-D: function "lcd_data_write" declared implicitly
+main.c:      lcd_data_write((char)value);
+main.c:      ^
+main.c(60): warning:  #223-D: function "delay" declared implicitly
+main.c:      delay(100*500);
+main.c:      ^
+main.c(64): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 5 warnings, 0 errors
+compiling lcd.c...
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 5 Warning(s).
+Build target 'ADC_LPC21xx'
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 0 Warning(s).
+Build target 'ADC_LPC21xx'
+assembling Startup.s...
+compiling main.c...
+main.c(44): warning:  #117-D: non-void function "ADC" should return a value
+main.c:      return;
+main.c:            ^
+main.c(48): warning:  #951-D: return type of function "main" must be "int"
+main.c:   void main()
+main.c:        ^
+main.c(59): warning:  #223-D: function "lcd_data_write" declared implicitly
+main.c:      lcd_data_write((char)value);
+main.c:      ^
+main.c(60): warning:  #223-D: function "delay" declared implicitly
+main.c:      delay(100*500);
+main.c:      ^
+main.c(64): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 5 warnings, 0 errors
+compiling lcd.c...
+linking...
+Program Size: Code=1812 RO-data=16 RW-data=0 ZI-data=1160  
+FromELF: creating hex file...
+User command #1: fromelf --bin .\Obj\adc.axf -o .\Obj\adc.bin
+".\Obj\adc.axf" - 0 Error(s), 5 Warning(s).

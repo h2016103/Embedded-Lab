@@ -1,0 +1,6 @@
+This project is intend to Check ADC Peripheral of ARM7 LPC2148,
+A POT is connected to ADC0 channel3.
+
+A C Receipe by Devesh Samaiya (devesh@electroons.com)
+IIT Kharagpur, INDIA
+For more ARM recepies visit http://www.electroons.com/ARM

@@ -1,0 +1,28 @@
+/*
+A C Receipe for ADC+LCD Interfacing to ARM7 by Devesh Samaiya (devesh@electroons.com)
+for more ARM7 recepies visit http://electroons.com/ARM
+
+This work by http://www.electroons.com is licensed under the Creative Commons Attribution 2.5 India License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by/2.5/in/ 
+*/
+
+#include<stdio.h>
+#include<LPC214x.H>
+#include"lcd.h"
+#include"adc.h"
+
+int main()
+{
+ unsigned short value = 0;
+ unsigned char buf[16] = {0};
+ init_lcd();
+ while(1)
+ {
+   lcd_clear();
+   value = ADC(0,3,CONTROLLED_MODE); // BURST_MODE or CONTROLLED_MODE
+   lcd_putstring(0, "channel:3");
+   sprintf((char *)buf, "ADC:%d ", value);
+   lcd_putstring(1, (char *)buf);
+   delay(300000); 
+ }
+}

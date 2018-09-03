@@ -1,0 +1,18 @@
+Dependencies for Project 'adc', Target 'ADC_LPC21xx': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4BB271CE)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 516"--list .\lst\startup.lst --xref -o .\obj\startup.o --depend .\obj\startup.d)
+F (.\serial.c)(0x58124765)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\obj\serial.o --omf_browse .\obj\serial.crf --depend .\obj\serial.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC21xx.H)(0x570FEBF8)
+I (Serial.h)(0x581246ED)
+F (.\main.c)(0x581247A6)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570FEBF8)
+I (C:\Keil_v5\ARM\ARMCC_505u2\include\stdio.h)(0x54C334C8)
+I (lcd.h)(0x4EFBE136)
+I (adc.h)(0x4EE0053E)
+I (serial.h)(0x581246ED)
+F (.\lcd.c)(0x4EDF2724)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\obj\lcd.o --omf_browse .\obj\lcd.crf --depend .\obj\lcd.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570FEBF8)
+I (lcd.h)(0x4EFBE136)
+F (.\adc.c)(0x4EFBE0FC)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\obj\adc.o --omf_browse .\obj\adc.crf --depend .\obj\adc.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214x.H)(0x570FEBF8)
+I (adc.h)(0x4EE0053E)
+F (.\Abstract.txt)(0x4EFBE3A8)()

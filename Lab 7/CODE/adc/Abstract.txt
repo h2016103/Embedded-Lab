@@ -1,0 +1,15 @@
+This project is intend to check ADC Peripheral of ARM7 LPC2148,
+A POT is connected to ADC0 channel3.
+
+This program reads analog data over channel 3 of ADC0, \
+converts it into digital value and display same decimal equivalent onto a LCD. 
+
+Find adc.bin (binary) and adc.hex (hex file) in the Obj folder
+
+A C Receipe by Devesh Samaiya (devesh@electroons.com)
+IIT Kharagpur, INDIA
+For more ARM recepies visit http://www.electroons.com/ARM
+
+
+This work by http://www.electroons.com is licensed under the Creative Commons Attribution 2.5 India License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by/2.5/in/ 
